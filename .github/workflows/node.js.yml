@@ -22,13 +22,17 @@ jobs:
           cache: "yarn"
 
       - name: Install dependencies
-         run: yarn
+        uses: borales/actions-yarn@v4
+        with:
+          cmd: install # will run `yarn install` command
 
       - name: Build
-        run: yarn build
+        uses: borales/actions-yarn@v4
+        with:
+          cmd: build:prod # will run `yarn build:prod` command
 
       - name: Deploy to Heroku
         uses: akhileshns/heroku-deploy@v3.12.12
-        with: 
+        with:
           heroku_api_key: ${{secrets.HEROKU_API_KEY}}
           heroku_app_name: ${{secrets.HEROKU_APP_NAME}}
