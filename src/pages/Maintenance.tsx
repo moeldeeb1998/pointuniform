@@ -1,6 +1,10 @@
+import Head from "next/head";
 import "../styles/pages/misc.module.scss";
 
 const Maintenance = () => {
+  <Head>
+    <title>Test</title>
+  </Head>;
   return (
     <div className="misc-wrapper">
       <a className="brand-logo" href="/">
