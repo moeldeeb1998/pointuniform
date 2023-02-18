@@ -1,5 +1,5 @@
 import Head from "next/head";
-import "../styles/pages/misc.module.scss";
+// import "../styles/pages/misc.module.scss";
 
 const Maintenance = () => {
   <Head>
