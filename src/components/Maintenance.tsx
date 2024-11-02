@@ -1,4 +1,5 @@
 import Head from "next/head";
+import Link from "next/link";
 // import "../styles/pages/misc.module.scss";
 
 const Maintenance = () => {
@@ -7,9 +8,9 @@ const Maintenance = () => {
   </Head>;
   return (
     <div className="misc-wrapper">
-      <a className="brand-logo" href="/">
+      <Link className="brand-logo" href="/">
         <img width={300} src="/assets/logo.png" alt="POINT" />
-      </a>
+      </Link>
       <div className="misc-inner p-2 p-sm-3">
         <div className="w-100 text-center">
           <h2 className="mb-1"> 🛠 تحت الصيانة</h2>
